@@ -126,20 +126,32 @@ main {
 
 .blog{
     width: 322px;
-    height: 362px;
+    height: 312px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #E8E8E8;
     border-radius: 15px;
 
 }
 
+.blog-img {
+    display: flex;
+    column-gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
 .blog-img img {
-    width: 103.5%;
+    width: 100%;
 }
 
 .blog-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 0 15px;
 }
 
@@ -159,20 +171,7 @@ main {
     display: flex;
     color: #161616;
     opacity: .7;
-    margin-top: 45px;
-}
-
-.clock{
-    margin-right: 35px;
-    justify-content: center;
-}
-
-.clock i {
-    margin-right: 5px;
-}
-
-.comments i {
-    margin-right: 5px;
+    margin-top: 10px;
 }
 
 .view-btn{
