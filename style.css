@@ -23,6 +23,16 @@ body {
     position: relative;
 }
 
+/* container animation */
+@keyframes coloring {
+    from {background-color: #161616;}
+    to {background-color: antiquewhite;}    
+}
+
+.hero-container{
+    animation: coloring 4s  3s 12  ;
+}
+
 .hero-text{
     color: #FFFFFF;
     width: 400px;
@@ -76,6 +86,10 @@ body {
 .hero-cta i {
     margin-left: 10px;
     font-size: 25px;
+}
+
+.hero-cta:hover {
+    background-color: aqua;
 }
 
 
