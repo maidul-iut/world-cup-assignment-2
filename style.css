@@ -5,20 +5,29 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* hero styling */
 
 .hero-container {
     background-color: #161616;
+    width: 1300px;
     margin: 30px 140px;
     border-radius: 40px;
     display: flex;
+    position: relative;
 }
 
 .hero-text{
     color: #FFFFFF;
-    width: 50%;
-    padding: 50px 80px;
-    margin-bottom: 50px;
+    width: 400px;
+    margin: 0px 80px;
+    /* margin-bottom: 50px; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -27,12 +36,26 @@ body {
 .hero-title{
     font-weight: 700;
     font-size: 60px;
+    margin-bottom: 0px;
 }
 
 .hero-img {
     margin-bottom: 0;    
     width: 50%;
-    position: relative;    
+    position: relative;
+        
+}
+
+.hero-img img{
+    width: 77%;
+    /* height: auto; */
+    /* object-fit: cover; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 125px;
+    /* margin-top: 100px; */
+    
 }
 
 .hero-cta{
@@ -47,6 +70,7 @@ body {
     font-weight: 700;
     border: none;
     margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .hero-cta i {
@@ -54,13 +78,7 @@ body {
     font-size: 25px;
 }
 
-.hero-img img{
-    width: 94%;
-    object-fit: contain;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
+
 
 /* -----------------
     BLog Styling 
@@ -107,7 +125,7 @@ main {
 /* single blog item */
 
 .blog{
-    width: 312px;
+    width: 322px;
     height: 362px;
     display: flex;
     flex-direction: column;
@@ -115,6 +133,10 @@ main {
     border: 1px solid #E8E8E8;
     border-radius: 15px;
 
+}
+
+.blog-img img {
+    width: 103.5%;
 }
 
 .blog-info{
@@ -153,6 +175,10 @@ main {
     margin-right: 5px;
 }
 
+.view-btn{
+    display: none;
+}
+
 /* footer styling */
 
 footer{
@@ -188,3 +214,58 @@ footer hr {
     opacity: .2;
 
 }
+
+ /* responsive styling */ 
+
+@media screen and (max-width: 1441px) {
+    .hero-container{
+        width: 800px;
+        margin: 30px;
+    }
+    .hero-text{
+        margin: 0px 80px;
+    }
+
+    .hero-text p{
+        margin-top: 0px;
+        font-size: small;
+    }
+
+    .hero-img img{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .hero-title{
+        font-size: 40px;
+    }
+    main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .nav-btns-container{
+        flex-direction: row;
+        background-color: #fff;
+    }
+
+    .blogs-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog{
+        width: 335px;
+    }
+
+    .blog-img img {
+        width: 107.5%;
+    }
+
+    .view-btn{
+        display: block;
+        margin-top: 25px;
+        
+    }
+    
+} 
