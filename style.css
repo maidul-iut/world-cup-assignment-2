@@ -219,11 +219,12 @@ footer hr {
 
 @media screen and (max-width: 1441px) {
     .hero-container{
-        width: 800px;
+        width: 700px;
         margin: 30px;
     }
     .hero-text{
-        margin: 0px 80px;
+        width: 320px;
+        margin: 0px 40px;
     }
 
     .hero-text p{
@@ -266,6 +267,12 @@ footer hr {
         display: block;
         margin-top: 25px;
         
+    }    
+}
+
+/* @media screen and (max-width: 425) {
+    .hero-container {
+        flex-direction: column;
     }
     
-} 
+} */
